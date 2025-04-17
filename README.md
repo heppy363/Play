@@ -81,3 +81,7 @@ Per usarlo, crea un bot con BotFather e inserisci il token nelle impostazioni de
 
 ### Risorse
 Scarica JavaFX [qui](https://openjfx.io/)
+
+### Licenza
+
+Questo progetto è rilasciato sotto licenza MIT.
