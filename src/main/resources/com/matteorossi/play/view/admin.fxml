@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="915.0" prefWidth="1323.0" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matteorossi.play.controllers.AdminController">
+   <children>
+      <Label layoutX="572.0" layoutY="14.0" text="Pagina di amministrazione">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertLanguageTextField" layoutX="684.0" layoutY="159.0" promptText="Inserisci linguaggio" />
+      <Button fx:id="insertLanguageButton" layoutX="684.0" layoutY="194.0" mnemonicParsing="false" onAction="#onInsertLanguageClick" prefHeight="48.0" prefWidth="163.0" text="Inserisci linguaggio" />
+      <Label layoutX="501.0" layoutY="117.0" text="Aggiungi admin">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameAdminTextField" layoutX="498.0" layoutY="159.0" promptText="Nome utente" />
+      <TextField fx:id="passwordAdminTextField" layoutX="498.0" layoutY="194.0" promptText="Password" />
+      <TextField fx:id="firstNameAdminTextField" layoutX="498.0" layoutY="225.0" promptText="Nome" />
+      <TextField fx:id="lastNameAdminTextField" layoutX="498.0" layoutY="257.0" promptText="Cognome" />
+      <Button fx:id="addAdminButton" layoutX="515.0" layoutY="288.0" mnemonicParsing="false" onAction="#onAddAdminClick" text="Aggiungi admin" />
+      <Button fx:id="handleQuestionButton" layoutX="707.0" layoutY="395.0" mnemonicParsing="false" onAction="#onHandleQuestionClick" prefHeight="58.0" prefWidth="149.0" text="Gestisci domande" />
+
+      <!-- Tabella per username e bottone di reset password dell'utente -->
+      <TableView fx:id="userTable" layoutX="14.0" layoutY="159.0" prefHeight="369.0" prefWidth="433.0">
+         <columns>
+            <TableColumn fx:id="usernameColumn" prefWidth="160.0" text="Username" />
+            <TableColumn fx:id="resetColumn" prefWidth="135.0" text="Reset Password" />
+            <TableColumn fx:id="deleteColumn" prefWidth="137.0" text="Elimina" />
+         </columns>
+         <stylesheets>
+            <URL value="@../../../../style/style.css" />
+            <URL value="@../../../../style/table.css" />
+         </stylesheets>
+      </TableView>
+      <Label layoutX="715.0" layoutY="117.0" text="Linguaggi">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="117.0" text="Gestione utenti">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="558.0" text="Gestione admin">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="558.0" text="Gestione linguaggi">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <!-- Tabella per la gestione degli admin -->
+      <TableView fx:id="adminTable" layoutX="31.0" layoutY="595.0" prefHeight="301.0" prefWidth="149.0" stylesheets="@../../../../style/table.css">
+         <columns>
+            <TableColumn fx:id="adminColumn" prefWidth="75.0" text="Admin" />
+            <TableColumn fx:id="deleteAdminColumn" prefWidth="75.0" text="Elimina" />
+         </columns>
+      </TableView>
+      <!-- Tabella per la gestione dei linguaggi -->
+      <TableView fx:id="languagesTable" layoutX="231.0" layoutY="595.0" prefHeight="301.0" prefWidth="149.0" stylesheets="@../../../../style/table.css">
+         <columns>
+            <TableColumn fx:id="languageColumn" prefWidth="75.0" text="Linguaggio" />
+            <TableColumn fx:id="deleteLanguageColumn" prefWidth="75.0" text="Elimina" />
+         </columns>
+      </TableView>
+      <Button fx:id="loginButton" layoutX="707.0" layoutY="464.0" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="58.0" prefWidth="149.0" text="Login" />
+      <Label layoutX="702.0" layoutY="558.0" text="Gestione difficoltà">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="565.0" text="Gestione categorie">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <!-- Tabella per la gestione delle categorie -->
+      <TableView fx:id="categoryTable" layoutX="460.0" layoutY="595.0" prefHeight="301.0" prefWidth="149.0" stylesheets="@../../../../style/table.css">
+         <columns>
+            <TableColumn fx:id="categoryColumn" prefWidth="75.0" text="Categoria" />
+            <TableColumn fx:id="deleteCategoryColumn" prefWidth="75.0" text="Elimina" />
+         </columns>
+      </TableView>
+      <!-- Tabella per la gestione delle difficolta -->
+      <TableView fx:id="difficultyTable" layoutX="715.0" layoutY="595.0" prefHeight="301.0" prefWidth="149.0" stylesheets="@../../../../style/table.css">
+         <columns>
+            <TableColumn fx:id="difficultyColumn" prefWidth="75.0" text="Difficoltà" />
+            <TableColumn fx:id="deleteDifficultyColumn" prefWidth="75.0" text="Elimina" />
+         </columns>
+      </TableView>
+      <Label layoutX="873.0" layoutY="117.0" text="Aggiungi Categoria">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1110.0" layoutY="117.0" text="Aggiungi difficolta">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="insertThemsTextField" layoutX="873.0" layoutY="159.0" promptText="Aggiungi categoria" />
+      <TextField fx:id="insertDifficultTextField" layoutX="1075.0" layoutY="159.0" promptText="Aggiungi difficolta" />
+      <Button layoutX="881.0" layoutY="193.0" mnemonicParsing="false" onAction="#onInsertThemsClik" prefHeight="25.0" prefWidth="149.0" text="inserisci categoria" />
+      <Button layoutX="1083.0" layoutY="225.0" mnemonicParsing="false" onAction="#onInsertDifficultClik" prefHeight="25.0" prefWidth="149.0" text="Inserisci difficolta" />
+      <TextField fx:id="insertLevelDIffTextField" layoutX="1075.0" layoutY="194.0" promptText="livello difficolta" />
+
+   </children>
+</AnchorPane>

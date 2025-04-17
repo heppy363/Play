@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="onGiocaClik" prefHeight="500.0" prefWidth="900.0" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matteorossi.play.controllers.RoulseAndInformationController">
+   <children>
+      <Label layoutX="270.0" text="Regole e linee guida">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="69.0" text="In questo gioco potrai allenarti e mettere alla prova le tue abilita di programmatore divertendoti, segli tra molti linguaggi di programamzione e difficolta ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="90.0" text="DIVERTITI E MIGLIRA" textFill="#f80000">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="132.0" text="1) In ogni domanda c'e una ed una sola domanda coretta in quelle a scelta multipla">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="157.0" text="2) Non ci sono limiti di tempo per ogni livello">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="182.0" text="2) La difficolta e crescente in base a quello che scegli ma nulla di impedisce di sceglierla in maniera arbitraria">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="207.0" text="3) Potrai ripetre tutti i livelli per ogni difficolta o linguaggio di programmazione anche se lo ai gia superato o meno">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="232.0" text="4) Nelle domande in cui ti e chiesto di scrivere codice e attivo il CaseSensitive quindi non confonderti tra minuscole e maiuscole">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="257.0" text="5) Per superare il livello devi rispondere alla metra piu uno di domande in maniera coretta">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="282.0" text="6) Potrai chiudere il gioco quando vuoi pero in caso di fallimento questo verra registrato">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="257.0" layoutY="416.0" mnemonicParsing="false" onAction="#onGiocoClik" prefHeight="58.0" prefWidth="147.0" text="Gioca" />
+      <Button layoutX="751.0" layoutY="416.0" mnemonicParsing="false" onAction="#onClassificaClik" prefHeight="58.0" prefWidth="147.0" text="Classifica" />
+   </children>
+</AnchorPane>

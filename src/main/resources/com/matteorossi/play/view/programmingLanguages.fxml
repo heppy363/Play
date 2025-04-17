@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="languagesArchorPane" prefHeight="500.0" prefWidth="900.0" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matteorossi.play.controllers.LinguaggiProgrammazioneController">
+   <children>
+      <Label layoutX="277.0" layoutY="14.0" text="Scegli il linguaggio di programmazione">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="43.0" layoutY="461.0" mnemonicParsing="false" onAction="#onLoginButtonClik" text="Login" textFill="#a10b0b" />
+   </children>
+</AnchorPane>

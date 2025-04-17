@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matteorossi.play.controllers.DelateQuestionsController">
+    <children>
+        <Label layoutX="307.0" layoutY="14.0" text="Elimina le domande che desideri">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="adminButton" layoutX="770.0" layoutY="435.0" mnemonicParsing="false" onAction="#anAdminButtonClik" prefHeight="51.0" prefWidth="116.0" text="Admin" />
+        <TableView fx:id="questionsTable" layoutX="14.0" layoutY="90.0" prefHeight="330.0" prefWidth="872.0">
+            <columns>
+                <TableColumn fx:id="questionColumn" prefWidth="300.0" text="Domanda" />
+                <TableColumn fx:id="languageColumn" prefWidth="302.0" text="Linguaggio" />
+                <TableColumn fx:id="actionColumn" prefWidth="269.0" text="Azione" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="intruductionPage" minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="900.0" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matteorossi.play.controllers.IntruductionController">
+   <children>
+      <Label layoutX="293.0" layoutY="14.0" text="Benvenuto in Play">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="337.0" layoutY="72.0" prefHeight="40.0" prefWidth="228.0" text="Impara divertendoti ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonGioca" layoutX="372.0" layoutY="250.0" mnemonicParsing="false" onAction="#onButtonGiocaClik" prefHeight="32.0" prefWidth="156.0" text="Gioca">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

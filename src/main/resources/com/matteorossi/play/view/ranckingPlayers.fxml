@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matteorossi.play.controllers.RanckingPlayersControllers">
+
+    <TableView fx:id="rankingTable" layoutX="20.0" layoutY="20.0" prefHeight="300.0" prefWidth="400.0">
+        <columns>
+            <TableColumn fx:id="positionColumn" prefWidth="50" text="Posizione" />
+            <TableColumn fx:id="usernameColumn" prefWidth="150" text="Username" />
+            <TableColumn fx:id="totalScoreColumn" prefWidth="100" text="Score" />
+        </columns>
+    </TableView>
+
+
+    <children>
+      <Button layoutX="151.0" layoutY="403.0" mnemonicParsing="false" onAction="#onGiocaClik" prefHeight="53.0" prefWidth="93.0" text="Gioca" />
+      <Button layoutX="700.0" layoutY="403.0" mnemonicParsing="false" onAction="#onRegoleClik" prefHeight="53.0" prefWidth="93.0" text="Regole" />
+   </children>
+
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matteorossi.play.controllers.LoginController">
+    <children>
+        <Label layoutX="201.0" layoutY="14.0" text="Efettua il login" textFill="RED">
+            <font>
+                <Font size="25.0" />
+            </font></Label>
+        <Button id="loginButtom" fx:id="loginButton" layoutX="110.0" layoutY="277.0" mnemonicParsing="false" onAction="#onLoginButtonClik" text="Login" />
+        <Button fx:id="singinButton" layoutX="458.0" layoutY="277.0" mnemonicParsing="false" onAction="#onSinginButtonClik" text="Singin" />
+        <TextField fx:id="texfildeUsername" layoutX="226.0" layoutY="119.0" />
+        <Label layoutX="272.0" layoutY="91.0" text="Username" />
+        <Label layoutX="280.0" layoutY="200.0" text="Password" />
+      <PasswordField fx:id="textfildPassword" layoutX="231.0" layoutY="217.0" />
+      <Button fx:id="resetPassword" layoutX="250.0" layoutY="277.0" mnemonicParsing="false" onAction="#onResetPasswordClik" text="Reset password" visible="false" />
+    </children>
+</AnchorPane>

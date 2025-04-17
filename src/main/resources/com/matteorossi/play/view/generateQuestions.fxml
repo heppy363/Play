@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matteorossi.play.controllers.GenerateQuestionsController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="370.0" layoutY="14.0" text="Domanda numero">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="nextButton" layoutX="717.0" layoutY="442.0" mnemonicParsing="false" onAction="#onNextQuestionButtonClick" prefHeight="44.0" prefWidth="169.0" text="Domanda successiva" />
+      <Button fx:id="previousButton" layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#onPreviousQuestionButtonClick" prefHeight="44.0" prefWidth="169.0" text="Domanda precedente" />
+      <TextField fx:id="questionsTextField" layoutX="36.0" layoutY="59.0" prefHeight="123.0" prefWidth="829.0" />
+      <TextArea fx:id="insertQuestionsTextArea" layoutX="35.0" layoutY="193.0" prefHeight="113.0" prefWidth="829.0" />
+      <CheckBox fx:id="CorrettaA" layoutX="236.0" layoutY="331.0" mnemonicParsing="false" text="Corretta A" />
+      <CheckBox fx:id="CorrettaB" layoutX="236.0" layoutY="406.0" mnemonicParsing="false" text="Corretta B" />
+      <CheckBox fx:id="CorrettaC" layoutX="579.0" layoutY="331.0" mnemonicParsing="false" text="Corretta C" />
+      <CheckBox fx:id="CorrettaD" layoutX="579.0" layoutY="406.0" mnemonicParsing="false" text="Corretta D" />
+      <Label fx:id="QuestionsA1" layoutX="211.0" layoutY="365.0" prefHeight="30.0" prefWidth="138.0" text="Label" />
+      <Label fx:id="QuestionsB1" layoutX="211.0" layoutY="442.0" prefHeight="30.0" prefWidth="138.0" text="Label" />
+      <Label fx:id="QuestionsC1" layoutX="547.0" layoutY="365.0" prefHeight="30.0" prefWidth="138.0" text="Label" />
+      <Label fx:id="QuestionsD1" layoutX="547.0" layoutY="442.0" prefHeight="30.0" prefWidth="138.0" text="Label" />
+      <Button fx:id="confermButton" layoutX="425.0" layoutY="455.0" mnemonicParsing="false" onAction="#onConfermaClick" text="Conferma" visible="false" />
+   </children>
+</AnchorPane>

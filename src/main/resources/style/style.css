@@ -1,0 +1,98 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #F4F6FA; /* sfondo chiaro, freddo */
+}
+
+/* Pulsanti */
+.button {
+    -fx-background-color: #5C6BC0;  /* blu con accento viola */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 8 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0.5, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #7986CB; /* azzurrino più chiaro */
+}
+
+/* Label */
+.label {
+    -fx-text-fill: #1E1E2F; /* quasi nero/blu scuro */
+    -fx-font-size: 14px;
+}
+
+/* TextField */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #5C6BC0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-size: 13px;
+    -fx-padding: 6 8;
+    -fx-text-fill: #1E1E2F;
+}
+
+/* Titoli */
+.title {
+    -fx-font-size: 20px;
+    -fx-text-fill: #5C6BC0;
+    -fx-font-weight: bold;
+}
+
+/* VBox o contenitori */
+.container {
+    -fx-padding: 20;
+    -fx-spacing: 10;
+}
+
+/* Separatore se usi */
+.separator {
+    -fx-background-color: #CCCCCC;
+    -fx-padding: 1 0 1 0;
+}
+
+/* TableView - sfondo e bordi */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #5C6BC0;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 4;
+    -fx-table-cell-border-color: transparent;
+    -fx-control-inner-background: white;
+}
+
+/* Intestazioni delle colonne */
+.table-view .column-header {
+    -fx-background-color: #5C6BC0;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Riga selezionata */
+.table-row-cell:filled:selected, .table-cell:filled:selected {
+    -fx-background-color: #C5CAE9; /* azzurro chiaro selezione */
+    -fx-text-fill: #1E1E2F;
+}
+
+/* Riga hover (quando passi sopra con il mouse) */
+.table-row-cell:hover {
+    -fx-background-color: #E8EAF6;
+}
+
+/* Celle normali */
+.table-cell {
+    -fx-padding: 8 4;
+    -fx-font-size: 13px;
+    -fx-text-fill: #1E1E2F;
+}
+
+/* Bordo tra le colonne (opzionale) */
+.table-view .filler {
+    -fx-background-color: white;
+}
